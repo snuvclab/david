@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description"
+        content="Project page of the paper <DAViD: Modeling Dynamic Affordance of 3D Objects using Pre-trained Video Diffusion Models>"">
+  <meta property=" og:title"
+        content="DAViD: Modeling Dynamic Affordance of 3D Objects using Pre-trained Video Diffusion Models" />
+    <meta property="og:description"
+        content="We propose a novel type of affordance named as dynamic affordance, and present a method for learning this affordance from a given 3D object." />
+    <meta property="og:url" content="https://snuvclab.github.io/david/" />
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/images/teaser.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+
+    <meta name="twitter:title"
+        content="DAViD: Modeling Dynamic Affordance of 3D Objects using Pre-trained Video Diffusion Models">
+    <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="static/images/teaser.png">
+    <meta name="twitter:card" content="static/images/teaser.png">
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="Affordance, Human-Object Interaction, Diffusion Models">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Dynamic Affordance</title>
+    <link rel="icon" type="image/x-icon" href="static/images/dynamic_affordance.ico">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/js/video-comparison.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+    <script src="static/js/video-comparison.js"></script>
+</head>
+
+<body>
+
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">DAViD: Modeling Dynamic Affordance of 3D Objects using
+                            Pre-trained Video Diffusion Models</h1>
+                        <div class="is-size-5 publication-authors">
+                            <!-- Paper authors -->
+                            <span class="author-block">
+                                <a href="https://www.sshowbiz.xyz/" target="_blank">Hyeonwoo
+                                    Kim</a><sup>1</sup>,</span>
+                            <span class="author-block">
+                                <a href="https://bsw1907.notion.site/Sangwon-Beak-94077dec9e8c4821bc073a3cb0892407"
+                                    target="_blank">Sangwon Beak</a><sup>1</sup>,</span>
+                            <span class="author-block">
+                                <a href="https://jhugestar.github.io/" target="_blank">Hanbyul Joo</a><sup>1</sup>
+                            </span>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">Seoul National University<sup>1</sup></span>
+                            <!-- <span class="author-block">Naver Webtoon AI<sup>2</sup></span> -->
+                            <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                        </div>
+                        <div class="columns is-centered">
+                            <div class="is-size-4 publication-venue">
+                                <font color="#2B93E8">
+                                </font>
+                            </div>
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- Paper link -->
+                                <span class="link-block">
+                                    <a href="https://snuvclab.github.io/david/" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span>Paper</span>
+                                    </a>
+                                </span>
+
+                                <!-- Github link -->
+                                <span class="link-block">
+                                    <a href="https://snuvclab.github.io/dynamic_affordance/" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span>
+
+                                <!-- ArXiv link -->
+                                <span class="link-block">
+                                    <a href="https://snuvclab.github.io/dynamic_affordance/" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-image">
+                <img src="static/images/teaser.png" alt="Random Image" id="tree" width="100%">
+            </div>
+        </div>
+        </br>
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <h2 class="subtitle has-text-centered">
+                    Given a 3D object mesh, we generates 4D Human-Object Interaction samples, and
+                    learn a new type of affordance called <i>Dynamic Affordance</i> which models dynamic patterns
+                    of both human and object during HOI.
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <br>
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            Understanding the ability of humans to use objects is crucial for AI to improve daily life.
+                            Existing studies for learning such ability focus on human-object patterns (<i>e.g.</i>,
+                            contact,
+                            spatial relation, orientation) in static situations, and learning Human-Object Interaction
+                            (HOI) patterns over time (<i>i.e.</i>, movement of human and object) is relatively less
+                            explored.
+                            In this paper, we introduce a novel type of affordance named <i>Dynamic Affordance</i>.
+                            For a given input 3D object mesh, we learn the dynamic affordance to model the distribution
+                            of
+                            both (1) human
+                            motion and (2) human guided object pose during interactions.
+                            As a core idea, we present a method to learn the 3D dynamic affordance from synthetically
+                            generated 2D videos, leveraging a pre-trained video diffusion model. Specifically, we
+                            propose a pipeline that first generates 2D HOI videos from the 3D object and then lifts them
+                            to generate 4D HOI samples.
+                            Once we generate diverse 4D HOI samples on various target objects, we train our DAViD,
+                            where we present a method based on the Low-Rank Adaptation (LoRA) module for pre-trained
+                            human motion diffusion model (MDM) and an object pose diffusion model with human pose
+                            guidance.
+                            Our motion diffusion model is extended for multi-object interactions, demonstrating the
+                            advantage of our pipeline with LoRA for combining the concepts of object usage.
+                            Through extensive experiments, we demonstrate our DAViD outperforms the baselines in
+                            generating human motion with HOIs.
+                        </p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Method Overview -->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3 has-text-centered">Method Overview</h2>
+                <img src="static/images/method.png" alt="Random Image" id="tree" height="100%">
+                </br>
+                </br>
+                <h2 class="subtitle has-text-centered">
+                    Our method consists of two parts; <b>(1) 4D HOI Sample Generation</b>, represented in upper box,
+                    <b>(2) Learning Dynamic Affordance from Generated 4D
+                        HOI Samples</b>,
+                    represented in lower box.
+                    First, we create 2D HOI Video using the structure guidance of object rendering, and generate 4D HOI
+                    samples with our uplifting
+                    pipeline. Then, the generated 4D HOI Samples are used to train our DAViD, learning the patterns of
+                    human motion and object pose
+                    conditioned by human pose.
+                </h2>
+            </div>
+        </div>
+    </section>
+    <!-- Video -->
+    <section class="hero is-small is-light">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">Video</h2>
+                        <div class="publication-video">
+                            <iframe width="100%" height="450" src="https://www.youtube.com/embed/aAU-EpiV7HU"
+                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero is-small"></section>
+    <div class="hero-body">
+        <div class="container">
+            <h2 class="title is-3 has-text-centered">Results</h2>
+
+            <br />
+            <div class="row">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video" width=100% id="stool_hoi" loop playsinline autoplay muted
+                        src="./static/videos/barbell.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+            </div>
+            <div class="row">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video" width=100% id="stool_hoi" loop playsinline autoplay muted
+                        src="./static/videos/cart.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+            </div>
+            <div class="row">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video" width=100% id="stool_hoi" loop playsinline autoplay muted
+                        src="./static/videos/guitar.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+            </div>
+            <div class="row">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video" width=100% id="stool_hoi" loop playsinline autoplay muted
+                        src="./static/videos/scooter.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- BibTeX -->
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>Comming Soon!</code></pre>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+
+                        <p>
+                            This page was built using the <a
+                                href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+                            You are free to borrow the of this website, we just ask that you link back to this page in
+                            the footer.
+                            <br> This website is licensed under a <a rel="license"
+                                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                                Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

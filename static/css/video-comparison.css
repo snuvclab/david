@@ -1,0 +1,118 @@
+.vcs_loading {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #ededed;
+	z-index: 999999999;
+	text-align: center;
+	padding-top: 1.2em;
+	font-family: Arial, sans serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+	opacity: 1;
+	pointer-events: none;
+}
+.vcs_wrapper {
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+	position: relative;
+	max-width: 1080px;
+	overflow: hidden;
+	max-height: 50px;
+	margin: 0 auto;
+}
+.vcs_wrapper:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: block;
+}
+.vcs_video {
+	position: absolute;
+	top: 0;
+	width: 50%;
+	overflow: hidden;
+	height: 100%;
+}
+.vcs_video video {
+	width: auto !important;
+	max-width: none !important;
+	height: 100% !important;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.vcs_video_l {
+	left: 0;
+}
+.vcs_video_r {
+	left: 50%;
+}
+.vcs_video_r video {
+	left: -100%;
+}
+.vcs_slider {
+	border-left: 1px solid #FFF;
+	left: 50%;
+	position: absolute;
+	width: 0px;
+	height: 100%;
+	top: 0px;
+	z-index: 10;
+	-webkit-box-shadow: 0px 0px 9px 2px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: 0px 0px 9px 2px rgba(50, 50, 50, 0.75);
+	box-shadow: 0px 0px 9px 2px rgba(50, 50, 50, 0.75);
+}
+.vcs_slider span {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: move;
+	position: absolute;
+	top: 50%;
+	left: -8px;
+	margin-top: -25px;
+	-moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+	box-shadow: inset 0px 1px 0px 0px #ffffff;
+	background-color: #ededed;
+	-webkit-border-top-left-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-moz-border-radius-topright: 6px;
+	border-top-right-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-moz-border-radius-bottomright: 6px;
+	border-bottom-right-radius: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	border-bottom-left-radius: 6px;
+	text-indent: 0;
+	border: 1px solid #dcdcdc;
+	display: inline-block;
+	color: #777777;
+	font-family: arial;
+	font-size: 15px;
+	font-weight: bold;
+	font-style: normal;
+	height: 50px;
+	line-height: 50px;
+	width: 16px;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 1px 1px 0px #ffffff;
+}
