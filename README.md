@@ -1,15 +1,14 @@
 # <p align="center"> DAViD: Modeling Dynamic Affordance of 3D Objects using Pre-trained Video Diffusion Models </p>
 
-## [Project Page](https://snuvclab.github.io/david/)
- <!-- &nbsp;|&nbsp; [Paper](https://arxiv.org/pdf/xxxx.xxxxx)  -->
+## [Project Page](https://snuvclab.github.io/david/) &nbsp;|&nbsp; [Paper](https://arxiv.org/pdf/2501.08333) 
 
 ![demo.png](./assets/teaser.png)
 
 This is the official code for the paper "DAViD: Modeling Dynamic Affordance of 3D Objects using Pre-trained Video Diffusion Models".
 
 
-## Regarding Paper Release
-- The paper (arXiv) will be updated and available soon.
+## Regarding Code Release
+- The code will be updated and available soon.
 <!-- ## News -->
 
 
