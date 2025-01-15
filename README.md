@@ -12,9 +12,18 @@ This is the official code for the paper "DAViD: Modeling Dynamic Affordance of 3
 <!-- ## News -->
 
 
-<!-- ## Citation
+## Citation
 ```bibtex
-``` -->
+@misc{david,
+      title={DAViD: Modeling Dynamic Affordance of 3D Objects using Pre-trained Video Diffusion Models}, 
+      author={Hyeonwoo Kim and Sangwon Beak and Hanbyul Joo},
+      year={2025},
+      eprint={2501.08333},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2501.08333}, 
+}
+```
 
 <!-- ## License
 This work is licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. -->
