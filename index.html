@@ -225,10 +225,11 @@
 
     <section class="hero is-small"></section>
     <div class="hero-body">
-        <div class="container">
+        <!-- <div class="container"> -->
+        <div class="container is-max-desktop content">
             <h2 class="title is-3 has-text-centered">Results</h2>
-
             <br />
+            <h4 align="left" class="title is-4">Generated HOI Motions from DAViD </h4>
             <div class="row">
                 <div class="video-compare-container" style="width: 100%">
                     <video class="video" width=100% id="stool_hoi" loop playsinline autoplay muted
@@ -253,9 +254,77 @@
                         src="./static/videos/scooter.mp4" onplay="resizeAndPlay(this)"></video>
                 </div>
             </div>
+            <br />
+            <h4 align="left" class="title is-4">Concept Combining </h4>
+            <div class="row">
+                <div class="col">
+                    <div class="video-compare-container" style="width: 60%">
+                        <video class="video" width=100% id="stool_hoi" loop playsinline autoplay muted
+                            src="./static/videos/umbrella_jumps.mp4" onplay="resizeAndPlay(this)"></video>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="video-compare-container" style="width: 60%">
+                        <video class="video" width=100% id="stool_hoi" loop playsinline autoplay muted
+                            src="./static/videos/suitcase_walks.mp4" onplay="resizeAndPlay(this)"></video>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="video-compare-container" style="width: 60%">
+                        <video class="video" width=100% id="stool_hoi" loop playsinline autoplay muted
+                            src="./static/videos/umbrella_suitcase_walks.mp4" onplay="resizeAndPlay(this)"></video>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="has-text-centered">A person jumps, &lt;umbrella&gt;
+                    </p>
+                </div>
+                <div class="col">
+                    <p class="has-text-centered">A person walks, &lt;suitcase&gt;</p>
+                </div>
+                <div class="col">
+                    <p class="has-text-centered">A person walks, &lt;right_umbrella&gt;, &lt;left_suitcase&gt;</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="video-compare-container" style="width: 95%">
+                        <video class="video" width=100% id="stool_hoi" loop playsinline autoplay muted
+                            src="./static/videos/backpack_walks.mp4" onplay="resizeAndPlay(this)"></video>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="video-compare-container" style="width: 95%">
+                        <video class="video" width=100% id="stool_hoi" loop playsinline autoplay muted
+                            src="./static/videos/backpack_jumps.mp4" onplay="resizeAndPlay(this)"></video>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="video-compare-container" style="width: 95%">
+                        <video class="video" width=100% id="stool_hoi" loop playsinline autoplay muted
+                            src="./static/videos/backpack_crawls.mp4" onplay="resizeAndPlay(this)"></video>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="has-text-centered">A person walks, &lt;backpack&gt;
+                    </p>
+                </div>
+                <div class="col">
+                    <p class="has-text-centered">A person jumps, &lt;backpack&gt;</p>
+                </div>
+                <div class="col">
+                    <p class="has-text-centered">A person crawls, &lt;backpack&gt</p>
+                </div>
+            </div>
         </div>
     </div>
     </section>
+
+
     <!-- BibTeX -->
     <section class="section" id="BibTeX">
         <div class="container is-max-desktop content">
