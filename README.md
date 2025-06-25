@@ -1,4 +1,4 @@
-# <p align="center"> DAViD: Modeling Dynamic Affordance of 3D Objects using Pre-trained Video Diffusion Models </p>
+# <p align="center"> DAViD: Modeling Dynamic Affordance of 3D Objects using Pre-trained Video Diffusion Models (ICCV 2025)</p>
 
 ## [Project Page](https://snuvclab.github.io/david/) &nbsp;|&nbsp; [Paper](https://arxiv.org/pdf/2501.08333) 
 
