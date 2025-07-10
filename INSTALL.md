@@ -81,3 +81,20 @@ pip install numpy==1.23.1 loguru numba filterpy flatten-dict smplx trimesh==3.23
 pip install pyopengl==3.1.4 pyrender==0.1.45
 pip install segment-anything
 ```
+
+## Prepare Datasets
+
+We use [ComAsset](https://huggingface.co/datasets/SShowbiz/ComAsset) as our main dataset. Please download the dataset and place below the folder `data` as follows. You can also consider other datasets such as [BEHAVE](https://virtualhumans.mpi-inf.mpg.de/behave/), [InterCap](https://intercap.is.tue.mpg.de/), [FullBodyManip](https://github.com/lijiaman/omomo_release), [SAPIEN](https://sapien.ucsd.edu/). Please refer to our `utils/dataset.py` for the dataset placement.
+
+```
+data
+└── ComAsset
+    ├── accordion # object category
+    │   └── wx75e99elm1yhyfxz1efg60luadp95sl # object id
+    │       ├── images # folder for texture files
+    │       ├── model.obj
+    │       └── model.mtl
+    ├── axe
+    ├── ...
+    └── watering can
+```
