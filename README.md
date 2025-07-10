@@ -20,22 +20,22 @@ To generate 2D HOI Images of given 3D object (in this case, barbell), use follow
 bash scripts/generate_2d_hoi_images.sh --dataset "ComAsset" --category "barbell" --device 0 --skip_done
 ```
 
-<div style="display: flex; justify-content: center; text-align: center;">
-  <div style="margin: 5px;" width="32%">
-    <img src="assets/render.png"><br>
-    <span>Rendered Image</span>
-  </div>
-
-  <div style="margin: 5px;" width="32%">
-    <img src="assets/canny.png"><br>
-    <span>Canny Edges</span>
-  </div>
-
-  <div style="margin: 5px;" width="32%">
-    <img src="assets/2dhoi.png"><br>
-    <span>2D HOI Image</span>
-  </div>
-</div>
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img src="assets/render.png"><br>
+      <sub>Rendered Image</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="assets/canny.png"><br>
+      <sub>Canny Edges</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="assets/2dhoi.png"><br>
+      <sub>2D HOI Image</sub>
+    </td>
+  </tr>
+</table>
 
 ### Image-to-Video
 
@@ -56,22 +56,23 @@ To generate 4D HOI Samples from the generated 2D HOI Images (of the given 3D obj
 bash scripts/generate_4d_hoi_samples.sh --dataset "ComAsset" --category "barbell" --device 0 --skip_done
 ```
 
-<div style="display: flex; justify-content: center; text-align: center;">
-  <div style="margin: 5px;" width="32%">
-    <img src="assets/2dhoi.png"><br>
-    <span>Rendered Image</span>
-  </div>
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img src="assets/2dhoi.png"><br>
+      <sub>2D HOI Image</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="assets/2dhoivid.gif"><br>
+      <sub>2D HOI Video</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="assets/4dhoi_incam.gif"><br>
+      <sub>4D HOI Sample (Camera View)</sub>
+    </td>
+  </tr>
+</table>
 
-  <div style="margin: 5px;" width="32%">
-    <img src="assets/2dhoivid.gif"><br>
-    <span>2D HOI Video</span>
-  </div>
-
-  <div style="margin: 5px;" width="32%">
-    <img src="assets/4dhoi_incam.gif"><br>
-    <span>4D HOI Sample (Camera View)</span>
-  </div>
-</div>
 
 ### Visualization
 
