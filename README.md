@@ -6,10 +6,79 @@
 
 This is the official code for the paper "DAViD: Modeling Dynamic Affordance of 3D Objects using Pre-trained Video Diffusion Models".
 
+## Installation
+
+To setup the environment for running ComA, please refer to the instructions provided <a href="INSTALL.md">here</a>.
+
+## Quick Start
+
+### 2D HOI Image Generation
+
+To generate 2D HOI Images of given 3D object (in this case, barbell), use following command.
+
+```shell
+bash scripts/generate_2d_hoi_images.sh --dataset "ComAsset" --category "barbell" --device 0 --skip_done
+```
+
+### Image-to-Video
+
+We leverage commercial image-to-video diffusion model [Kling AI](https://www.klingai.com/) to make 2D HOI videos from 2D HOI images.
+Specifically, we use [imgur](https://imgur.com/) and [PiAPI](https://piapi.ai/docs) for uploading image and calling API for Kling AI. Check out `scripts/videos/get.sh`, `scripts/videos/post_i2v.sh` and setup your `X-API-key` of your PiAPI account. Also checkout `constants/videos.py` and setup your client id of your imgur account. Note that you need paid version of Kling AI for directly follow our setting.
+
+```shell
+CUDA_VISIBLE_DEVICES=0 python src/generation/generate_videos.py --dataset "ComAsset" --category "barbell" --skip_done
+```
+
+Otherwise, you can also use opensource image-to-video models such as [Wan2.1](https://github.com/Wan-Video/Wan2.1) but currently we haven't tested yet.
+
+### 4D HOI Sample Generation
+
+To generate 4D HOI Samples from the generated 2D HOI Images (of the given 3D object, frypan), use following command.
+
+```shell
+bash scripts/generate_4d_hoi_samples.sh --dataset "ComAsset" --category "barbell" --device 0 --skip_done
+```
+
+### Visualization
+
+To visualize generated 4D HOI Samples, use following command
+
+```shell
+blenderproc debug src/visualization/visualize_4d_hoi_sample.py --dataset "ComAsset" --category "barbell" --idx 0
+```
+
+### Train LoRA for MDM
+
+To train LoRA for MDM (of the given 3D object, barbell), use following command.
+
+```shell
+bash scripts/train_lora.sh --dataset "ComAsset" --category "barbell" --device 0
+```
+
+### Train Object Motion Diffusion Model
+
+To train Object Motion Diffusion Model (of the given 3D object, barbell), use following command.
+
+```shell
+bash scripts/train_omdm.sh --dataset "ComAsset" --category "barbell" --device 0
+
+```
+
+### Sample Human Motion (Inference)
+
+```shell
+bash scripts/generate_human_motion.sh --max_seed 5 --dataset "ComAsset" --category "barbell" --device 0
+```
+
+### Sample Object Motion (Inference)
+
+```shell
+bash scripts/generate_object_motion.sh --dataset "ComAsset" --category "barbell" --device 0
+```
 
 ## Regarding Code Release
-- The code will be updated and available soon.
-<!-- ## News -->
+- We are keep updating the code (including dataset and environment setup)!
+- [2025/07/10] Initial skeleton code release!
 
 
 ## Citation
@@ -24,6 +93,3 @@ This is the official code for the paper "DAViD: Modeling Dynamic Affordance of 3
       url={https://arxiv.org/abs/2501.08333}, 
 }
 ```
-
-<!-- ## License
-This work is licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. -->
