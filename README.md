@@ -23,7 +23,7 @@ bash scripts/generate_2d_hoi_images.sh --dataset "ComAsset" --category "barbell"
 ### Image-to-Video
 
 We leverage commercial image-to-video diffusion model [Kling AI](https://www.klingai.com/) to make 2D HOI videos from 2D HOI images.
-Specifically, we use [imgur](https://imgur.com/) and [PiAPI](https://piapi.ai/docs) for uploading image and calling API for Kling AI. Check out `scripts/videos/get.sh`, `scripts/videos/post_i2v.sh` and setup your `X-API-key` of your PiAPI account. Also checkout `constants/videos.py` and setup your client id of your imgur account. Note that you need paid version of Kling AI for directly follow our setting.
+Specifically, we use [imgur](https://imgur.com/) and [PiAPI](https://piapi.ai/docs) for uploading image and calling API for Kling AI. Check out `scripts/videos/get.sh`, `scripts/videos/post_i2v.sh` and setup your `X-API-key` of your PiAPI account. Also check out `constants/videos.py` and setup your client id of your imgur account. Note that you need paid version of Kling AI for directly follow our setting.
 
 ```shell
 CUDA_VISIBLE_DEVICES=0 python src/generation/generate_videos.py --dataset "ComAsset" --category "barbell" --skip_done
@@ -33,7 +33,7 @@ Otherwise, you can also use opensource image-to-video models such as [Wan2.1](ht
 
 ### 4D HOI Sample Generation
 
-To generate 4D HOI Samples from the generated 2D HOI Images (of the given 3D object, frypan), use following command.
+To generate 4D HOI Samples from the generated 2D HOI Images (of the given 3D object, barbell), use following command.
 
 ```shell
 bash scripts/generate_4d_hoi_samples.sh --dataset "ComAsset" --category "barbell" --device 0 --skip_done
