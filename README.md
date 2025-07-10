@@ -20,6 +20,23 @@ To generate 2D HOI Images of given 3D object (in this case, barbell), use follow
 bash scripts/generate_2d_hoi_images.sh --dataset "ComAsset" --category "barbell" --device 0 --skip_done
 ```
 
+<div style="display: flex; justify-content: center; text-align: center;">
+  <div style="margin: 5px;" width="32%">
+    <img src="assets/render.png"><br>
+    <span>Rendered Image</span>
+  </div>
+
+  <div style="margin: 5px;" width="32%">
+    <img src="assets/canny.png"><br>
+    <span>Canny Edges</span>
+  </div>
+
+  <div style="margin: 5px;" width="32%">
+    <img src="assets/2dhoi.png"><br>
+    <span>2D HOI Image</span>
+  </div>
+</div>
+
 ### Image-to-Video
 
 We leverage commercial image-to-video diffusion model [Kling AI](https://www.klingai.com/) to make 2D HOI videos from 2D HOI images.
@@ -29,7 +46,7 @@ Specifically, we use [imgur](https://imgur.com/) and [PiAPI](https://piapi.ai/do
 CUDA_VISIBLE_DEVICES=0 python src/generation/generate_videos.py --dataset "ComAsset" --category "barbell" --skip_done
 ```
 
-Otherwise, you can also use opensource image-to-video models such as [Wan2.1](https://github.com/Wan-Video/Wan2.1) but currently we haven't tested yet.
+Otherwise, you can use open-source image-to-video models such as [Wan2.1](https://github.com/Wan-Video/Wan2.1), but we haven't tested it yet.
 
 ### 4D HOI Sample Generation
 
@@ -39,13 +56,32 @@ To generate 4D HOI Samples from the generated 2D HOI Images (of the given 3D obj
 bash scripts/generate_4d_hoi_samples.sh --dataset "ComAsset" --category "barbell" --device 0 --skip_done
 ```
 
+<div style="display: flex; justify-content: center; text-align: center;">
+  <div style="margin: 5px;" width="32%">
+    <img src="assets/2dhoi.png"><br>
+    <span>Rendered Image</span>
+  </div>
+
+  <div style="margin: 5px;" width="32%">
+    <img src="assets/2dhoivid.gif"><br>
+    <span>2D HOI Video</span>
+  </div>
+
+  <div style="margin: 5px;" width="32%">
+    <img src="assets/4dhoi_incam.gif"><br>
+    <span>4D HOI Sample (Camera View)</span>
+  </div>
+</div>
+
 ### Visualization
 
-To visualize generated 4D HOI Samples, use following command
+To visualize generated 4D HOI Samples, use following command. 
 
 ```shell
 blenderproc debug src/visualization/visualize_4d_hoi_sample.py --dataset "ComAsset" --category "barbell" --idx 0
 ```
+
+![4dhoi.gif](./assets/4dhoi.gif)
 
 ### Train LoRA for MDM
 
