@@ -8,7 +8,7 @@ This is the official code for the paper "DAViD: Modeling Dynamic Affordance of 3
 
 ## Installation
 
-To setup the environment for running ComA, please refer to the instructions provided <a href="INSTALL.md">here</a>.
+To setup the environment for running DAViD, please refer to the instructions provided <a href="INSTALL.md">here</a>.
 
 ## Quick Start
 
